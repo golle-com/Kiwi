@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark">    
+    <title>{{ title }} | anon.🥝</title>
+    <link
+      rel="stylesheet"
+      href="/css/pico.classless.min.css"
+    />
+    <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+  </head>
+  <body>
+    <header>
+      <hgroup>
+        <h1>anon🥝</h1>
+        <p>Privacy in the modern age</p>
+      </hgroup>    
+      <nav>
+        <ul>
+          <li>
+            <a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>Home</a>
+          </li>
+          <li>
+            <a href="/about/"{% if page.url == "/about/" %} aria-current="page"{% endif %}>About</a>
+          </li>
+          <li>
+            <a href="/100pc-anonymity-online-does-not-exist/"{% if page.url == "/100pc-anonymity-online-does-not-exist/" %} aria-current="page"{% endif %}>Online</a>
+          </li>
+        </ul>
+      </nav>
+      <h1>{{ heading or title }}</h1>
+      {% if summary %}<p>{{ summary }}</p>{% endif %}
+    </header>
+
+    <main>
+      <section>
+        <h2>Search</h2>
+        <div id="search"></div>
+      </section>
+
+      <article>
+        {{ content | safe }}
+      </article>
+    </main>
+
+    <footer>
+      <label for="theme-switcher">Theme:</label>
+      <select id="theme-switcher" name="theme-switcher" aria-label="Theme">
+        <option value="auto">Auto</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </footer>
+
+    <script src="/js/minimal-theme-switcher.js"></script>
+    <script src="/pagefind/pagefind-ui.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        if (window.PagefindUI) {
+          new PagefindUI({ element: "#search" });
+        }
+      });
+    </script>
+  </body>
+</html>
