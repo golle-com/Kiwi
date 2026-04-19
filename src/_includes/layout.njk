@@ -4,12 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark">    
-    <title>{{ title }} | anon.🥝</title>
+    <title>{{ title }} | anon🥝</title>
     <link
       rel="stylesheet"
       href="/css/pico.classless.min.css"
     />
-    <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+    <link rel="stylesheet" href="/pagefind/pagefind-component-ui.css" />
   </head>
   <body>
     <header>
@@ -26,8 +26,11 @@
             <a href="/about/"{% if page.url == "/about/" %} aria-current="page"{% endif %}>About</a>
           </li>
           <li>
-            <a href="/100pc-anonymity-online-does-not-exist/"{% if page.url == "/100pc-anonymity-online-does-not-exist/" %} aria-current="page"{% endif %}>Online</a>
+            <a href="/100pc-anonymity-online-does-not-exist/"{% if page.url == "/100pc-anonymity-online-does-not-exist/" %} aria-current="page"{% endif %}>Browser Privacy</a>
           </li>
+        </ul>
+        <ul>
+          <li><pagefind-input placeholder="Search"></pagefind-input></li>
         </ul>
       </nav>
       <h1>{{ heading or title }}</h1>
@@ -35,12 +38,11 @@
     </header>
 
     <main>
-      <section>
-        <h2>Search</h2>
-        <div id="search"></div>
-      </section>
+      <span data-pagefind-meta="title" hidden>{{ title }}</span>
 
-      <article>
+      <pagefind-results></pagefind-results>
+
+      <article data-pagefind-body>
         {{ content | safe }}
       </article>
     </main>
@@ -55,13 +57,6 @@
     </footer>
 
     <script src="/js/minimal-theme-switcher.js"></script>
-    <script src="/pagefind/pagefind-ui.js"></script>
-    <script>
-      window.addEventListener("DOMContentLoaded", function () {
-        if (window.PagefindUI) {
-          new PagefindUI({ element: "#search" });
-        }
-      });
-    </script>
+    <script src="/pagefind/pagefind-component-ui.js" type="module"></script>
   </body>
 </html>

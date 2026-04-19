@@ -44,4 +44,3 @@ This combination is unique to you.
 
 Your IP is just one of 20+ ways you are being tracked right now.
 
-@root.visual50

@@ -47,4 +47,3 @@ But you can get very close.
 Privacy is not about having something to hide.
 It is about having something to protect.
 
-Follow @root.visual - cybersecurity made simple.

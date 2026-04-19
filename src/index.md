@@ -1,17 +1,12 @@
 ---
 title: Home
-heading: Home
-summary: A small, clean, text-first site.
+heading: Welcome.
+summary: Yet another site about online privacy.
 layout: layout.njk
 permalink: /
 ---
-## Welcome
 
-This is the starting point for a lightweight wiki-style website.
-
-Content stays simple and easy to update.
-
-## Posts
+## Lastest Posts
 
 1. [100% anonymity online does not exist.](/100pc-anonymity-online-does-not-exist/)
 2. [How close to anonymous can you get?](/how-close-to-anonymous-can-you-get/)

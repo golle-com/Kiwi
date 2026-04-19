@@ -51,6 +51,3 @@ Reality:
 - Human behavior is always the weakest link.
 
 Every tool has a limit. Your behavior determines the rest.
-
-@root.visual
-@root.visual50
