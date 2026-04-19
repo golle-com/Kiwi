@@ -1,10 +1,10 @@
 
 # Technology Stack
 
-- Eleventy (11ty)
-- Markdown
-- Pagefind - For client-side search
-- Pico CSS - Classless mode
+- [Eleventy (11ty)](https://www.11ty.dev/docs/config/)
+- [CommonMarkdown](https://commonmark.org/help/) & [markdown-it](https://markdown-it.github.io/markdown-it/)
+- [Pagefind - For client-side search](https://pagefind.app/docs/components/)
+- [Pico CSS - Classless mode](https://picocss.com/docs)
 
 
 # Styling Rules
