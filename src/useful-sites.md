@@ -54,3 +54,8 @@ The manual for every product ever made, in one place. TV, washing machine, camer
 
 A directory of every major website with a direct link to their account deletion page. Rated by how hard they make it to leave. Built because companies hide this on purpose.
 
+## [RTK](https://github.com/rtk-ai/rtk)
+
+CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies. Works with Claude, Copilot, VSCode, Cursor, Gemini, Codex and many more.
+
+
